@@ -45,10 +45,56 @@ For Shifting the object:
 
 ## Results and Analysis
 
-### Example 1: Shifting a Backpack
+### Example 1: Shifting a Dog
 
-- **Input Image**: A desk with a backpack beside it.
-![Alt text](./input_images/bagpack.jpg)
+- **Input Image**: A dog running in the grass.
+<p align="center">
+<img src="./input_images/dog.jpg" alt="Backpack" width="300"/>
+</p>
+
+
+      After Masking:
+<p align="center">
+<img src="./segmented_dog.png" alt="Backpack" width="300"/>
+</p>
+
+      After Shifting:
+<p align="center">
+<img src="./shifted_dog.png" alt="Backpack" width="300"/>
+</p>
+
+- **Prompt**: "dog"
+- **Shift**: 200 pixels in the X direction.
+- **Output**: The dog was successfully shifted to the left. The inpainting did a decent job at filling in the grassy background, though some minor artifacts were noticeable where the dog had been.
+
+#### Success:
+- Grass is a relatively simple texture, and Stable Diffusion was able to inpaint it fairly well.
+- The shift was smooth, and the object was placed naturally in the new position.
+
+#### Potential Improvements:
+- For better texture alignment in complex scenes, combining multiple inpainting techniques could yield better results.
+- Using more detailed prompts for the inpainting model (e.g., "grassy background, no dog") could improve the results in more challenging scenes.
+
+
+---
+
+### Example 2: Shifting a Bagpack
+
+- **Input Image**: A desk with a bagpack beside it.
+<p align="center">
+<img src="./input_images/bagpack.jpg" alt="Backpack" width="300"/>
+</p>
+
+    After Masking:
+<p align="center">
+<img src="./segmented_bagpack.png" alt="Backpack" width="300"/>
+</p>
+
+      After Shifting:
+<p align="center">
+<img src="./shifted_backpack.png" alt="Backpack" width="300"/>
+</p>
+
 
 - **Prompt**: "backpack"
 - **Shift**: -150 pixels in the X direction.
@@ -64,35 +110,7 @@ For Shifting the object:
 
 ---
 
-### Example 2: Shifting a Dog
 
-- **Input Image**: A dog running in the grass.
-- **Prompt**: "dog"
-- **Shift**: -150 pixels in the X direction.
-- **Output**: The dog was successfully shifted to the left. The inpainting did a decent job at filling in the grassy background, though some minor artifacts were noticeable where the dog had been.
-
-#### Success:
-- Grass is a relatively simple texture, and Stable Diffusion was able to inpaint it fairly well.
-- The shift was smooth, and the object was placed naturally in the new position.
-
-#### Potential Improvements:
-- For better texture alignment in complex scenes, combining multiple inpainting techniques could yield better results.
-- Using more detailed prompts for the inpainting model (e.g., "grassy background, no dog") could improve the results in more challenging scenes.
-
----
-
-### Example 3: Shifting a Dog with Complex Prompt
-
-- **Input Image**: Same dog running in grass.
-- **Prompt**: "dog, jumping, action"
-- **Shift**: -200 pixels in the X direction.
-- **Output**: The shift moved the dog to the far left, but the background fill still had minor distortions in the grass. However, the overall object alignment was quite successful.
-
-#### Challenges:
-- The texture consistency in the inpainted grass was slightly off, leading to minor visual artifacts.
-- Further refinement in texture and alignment was needed for smoother blending.
-
----
 
 ### Observations
 
