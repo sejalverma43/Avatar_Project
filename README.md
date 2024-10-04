@@ -55,7 +55,7 @@ For Shifting the object:
 
       After Masking:
 <p align="center">
-<img src="./segmented_dog.png" alt="Backpack" width="300"/>
+<img src="./output images/segmented_dog.png" alt="Backpack" width="300"/>
 </p>
 
       After Shifting:
@@ -87,12 +87,12 @@ For Shifting the object:
 
     After Masking:
 <p align="center">
-<img src="./segmented_bagpack.png" alt="Backpack" width="300"/>
+<img src="./output images/segmented_bagpack.png" alt="Backpack" width="300"/>
 </p>
 
       After Shifting:
 <p align="center">
-<img src="./shifted_backpack.png" alt="Backpack" width="300"/>
+<img src="./output images/shifted_backpack.png" alt="Backpack" width="300"/>
 </p>
 
 
