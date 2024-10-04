@@ -60,7 +60,7 @@ For Shifting the object:
 
       After Shifting:
 <p align="center">
-<img src="./shifted_dog.png" alt="Backpack" width="300"/>
+<img src="./output images/shifted_dog.png" alt="Backpack" width="300"/>
 </p>
 
 - **Prompt**: "dog"
