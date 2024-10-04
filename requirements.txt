@@ -1,0 +1,8 @@
+torch>=1.13.0
+torchvision
+transformers
+diffusers
+opencv-python
+matplotlib
+Pillow
+numpy
